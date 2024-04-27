@@ -9,6 +9,7 @@ import {
 } from "framer-motion";
 
 import StarBackground from "./StarBackground";
+import ShinyButton from "../../../components/ShinyButton";
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
@@ -49,22 +50,42 @@ export const AuroraHero = () => {
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, et,
                     distinctio eum impedit nihil ipsum modi modi.
                 </p>
-                <motion.button
-                    style={{
-                        border,
-                        boxShadow,
-                    }}
-                    whileHover={{
-                        scale: 1.015,
-                    }}
-                    whileTap={{
-                        scale: 0.985,
-                    }}
-                    className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50"
-                >
-                    Start free trial
-                    <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
-                </motion.button>
+                <div className="flex gap-5">
+
+                    <motion.button
+                        style={{
+                            border,
+                            boxShadow,
+                        }}
+                        whileHover={{
+                            scale: 1.015,
+                        }}
+                        whileTap={{
+                            scale: 0.985,
+                        }}
+                        className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50"
+                    >
+                        Start free trial
+                        <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
+                    </motion.button>
+
+                    <motion.button
+                        style={{
+                            border,
+                            boxShadow,
+                        }}
+                        whileHover={{
+                            scale: 1.015,
+                        }}
+                        whileTap={{
+                            scale: 0.985,
+                        }}
+                        className="group relative flex w-fit items-center gap-1.5 rounded-full bg-gray-950/10 px-4 py-2 text-gray-50 transition-colors hover:bg-gray-950/50"
+                    >
+                        <ShinyButton></ShinyButton>
+                        <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
+                    </motion.button>
+                </div>
             </div>
 
             <div className="absolute inset-0 z-0">
