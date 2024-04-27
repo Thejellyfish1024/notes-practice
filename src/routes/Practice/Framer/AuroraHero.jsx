@@ -47,7 +47,7 @@ export const AuroraHero = () => {
                 </h1>
                 <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, et,
-                    distinctio eum impedit nihil ipsum modi.
+                    distinctio eum impedit nihil ipsum modi modi.
                 </p>
                 <motion.button
                     style={{
@@ -72,11 +72,11 @@ export const AuroraHero = () => {
                     <Stars radius={50} count={2000} factor={4} fade speed={2} />
                 </Canvas> */}
 
-                    <Canvas camera={{ position: [0, 0, 1] }}>
-                        <Suspense fallback={null}>
-                            <StarBackground />
-                        </Suspense>
-                    </Canvas>
+                <Canvas camera={{ position: [0, 0, 1] }}>
+                    <Suspense fallback={null}>
+                        <StarBackground />
+                    </Suspense>
+                </Canvas>
             </div>
         </motion.section>
     );
