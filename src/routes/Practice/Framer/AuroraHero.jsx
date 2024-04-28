@@ -10,6 +10,7 @@ import {
 
 import StarBackground from "./StarBackground";
 import ShinyButton from "../../../components/ShinyButton";
+import BorderAnimatedBtn from "../btn/BorderAnimatedBtn";
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
@@ -50,7 +51,7 @@ export const AuroraHero = () => {
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, et,
                     distinctio eum impedit nihil ipsum modi modi.
                 </p>
-                <div className="flex gap-5">
+                <div className="flex gap-5 items-center">
 
                     <motion.button
                         style={{
@@ -85,6 +86,8 @@ export const AuroraHero = () => {
                         <ShinyButton></ShinyButton>
                         <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
                     </motion.button>
+
+                    <BorderAnimatedBtn></BorderAnimatedBtn>
                 </div>
             </div>
 
