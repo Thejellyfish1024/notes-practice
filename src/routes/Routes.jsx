@@ -4,6 +4,7 @@ import App from "../App";
 import { AuroraHero } from "./Practice/Framer/AuroraHero";
 import Buttons from "../pages/Buttons";
 import Home from "../pages/Home";
+import Skills from "./Practice/Framer/Skills/Skills";
 
 export const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ export const router = createBrowserRouter([
         {
             path:'/aurora',
             element: <AuroraHero></AuroraHero>
+        },
+        {
+            path:'/skills',
+            element: <Skills></Skills>
         },
       ]
     },

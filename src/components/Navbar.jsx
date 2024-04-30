@@ -10,6 +10,9 @@ const Navbar = () => {
         <Link to={'/aurora'}>
             <button className="px-6 py-2 rounded-md text-white bg-blue-500">Aurora</button>
         </Link>
+        <Link to={'/skills'}>
+            <button className="px-6 py-2 rounded-md text-white bg-blue-500">Skills</button>
+        </Link>
         {/* <BoxAnimation></BoxAnimation>
         <DarkMode></DarkMode> */}
     </div>
