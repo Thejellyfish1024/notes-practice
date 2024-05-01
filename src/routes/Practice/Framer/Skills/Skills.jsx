@@ -19,6 +19,8 @@ const Skills = () => {
         <div data-aos="fade-down"
           data-aos-duration="1000" className="mt-10">
           <SkillsTabs />
+          <SkillsTabs />
+          <SkillsTabs />
         </div>
       </section>
     </div>
