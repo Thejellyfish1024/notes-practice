@@ -5,14 +5,6 @@ const HoverEffect = () => {
         <div
             className="relative rounded-lg overflow-hidden flex items-center justify-center group">
             <div className="flex items-center justify-center relative overflow-hidden group">
-                {/* image */}
-                {/* <Image
-            src={image?.path}
-            width={500}
-            height={300}
-            className=""
-            alt=""
-          ></Image> */}
                 <img
                     className="w-[300px] h-[200px]"
                     src="https://elements-cover-images-0.imgix.net/70266ea4-4eee-4566-b4c5-2cce1b593bc8?auto=compress%2Cformat&w=433&fit=max&s=7fc2f4946eb6fad72b09c04a22dbd7e6" alt="" />
