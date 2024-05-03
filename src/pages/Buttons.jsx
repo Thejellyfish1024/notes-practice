@@ -17,6 +17,8 @@ const Buttons = () => {
             </div>
             <div className="bg-black px-6 py-3 rounded-md">
                 <SkillBtn></SkillBtn>
+                <SkillBtn></SkillBtn>
+                <SkillBtn></SkillBtn>
             </div>
         </div>
     );
