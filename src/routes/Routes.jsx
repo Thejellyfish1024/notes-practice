@@ -5,6 +5,7 @@ import { AuroraHero } from "./Practice/Framer/AuroraHero";
 import Buttons from "../pages/Buttons";
 import Home from "../pages/Home";
 import Skills from "./Practice/Framer/Skills/Skills";
+import Blogs from "../pages/Blogs";
 
 export const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ export const router = createBrowserRouter([
         {
             path:'/skills',
             element: <Skills></Skills>
+        },
+        {
+            path:'/blogs',
+            element: <Blogs></Blogs>
         },
       ]
     },
