@@ -1,10 +1,13 @@
 import { useForm } from "react-hook-form";
 import useAxiosPublic from "../hooks/useAxiosPublic";
+import useAllBlogs from "../hooks/useAllBlogs";
 
 
 const Blogs = () => {
 
     const axiosPublic = useAxiosPublic();
+    const { data: allBlogs } = useAllBlogs();
+    console.log(allBlogs?.data);
 
     const {
         register,
@@ -14,7 +17,7 @@ const Blogs = () => {
 
     const onSubmit = async (data) => {
         console.log("data", data);
-        
+
         const res = await axiosPublic.post('/blog', data);
         console.log(res?.data);
     };
@@ -22,6 +25,7 @@ const Blogs = () => {
     return (
         <div>
             <h2 className="text-center my-8 text-4xl font-bold text-red-500">Add Blogs</h2>
+            {/* form */}
             <form onSubmit={handleSubmit(onSubmit)} className="px-20">
                 <div className="grid grid-cols-2 gap-5">
                     {/* title */}
@@ -75,7 +79,7 @@ const Blogs = () => {
                             <span className="text-red-500">This field is required</span>
                         )}
                     </div>
-            
+
                     {/* Status */}
 
                     <div className="w-full">
@@ -101,6 +105,16 @@ const Blogs = () => {
                     </button>
                 </div>
             </form>
+
+            {/* all blogs */}
+            <div className="flex justify-center items-center gap-4">
+            {
+                allBlogs?.data?.map(blog => <div className="text-white bg-red-500 p-4" key={blog?._id}>
+                    <p>{blog?.title}</p>
+                    <p>{blog?.description}</p>
+                </div>)
+            }
+            </div>
         </div>
     );
 };
