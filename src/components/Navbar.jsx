@@ -13,6 +13,9 @@ const Navbar = () => {
         <Link to={'/skills'}>
             <button className="px-6 py-2 rounded-md text-white bg-blue-500">Skills</button>
         </Link>
+        <Link to={'/products'}>
+            <button className="px-6 py-2 rounded-md text-white bg-blue-500">Products</button>
+        </Link>
         {/* <BoxAnimation></BoxAnimation>
         <DarkMode></DarkMode> */}
     </div>

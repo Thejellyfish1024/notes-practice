@@ -6,6 +6,7 @@ import Buttons from "../pages/Buttons";
 import Home from "../pages/Home";
 import Skills from "./Practice/Framer/Skills/Skills";
 import Blogs from "../pages/Blogs";
+import Products from "../pages/Products";
 
 export const router = createBrowserRouter([
     {
@@ -31,6 +32,10 @@ export const router = createBrowserRouter([
         {
             path:'/blogs',
             element: <Blogs></Blogs>
+        },
+        {
+            path:'/products',
+            element: <Products></Products>
         },
       ]
     },
