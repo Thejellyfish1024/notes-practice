@@ -131,6 +131,16 @@ const Products = () => {
                 </div>)
             }
             </div>
+
+            {/* all blogs */}
+            <div className="flex justify-center items-center gap-4">
+            {
+                allBlogs?.data?.map(blog => <div className="text-white bg-red-500 p-4" key={blog?._id}>
+                    <p>{blog?.title}</p>
+                    <p>{blog?.description}</p>
+                </div>)
+            }
+            </div>
         </div>
     );
 };
