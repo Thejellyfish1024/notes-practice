@@ -14,11 +14,11 @@ const Buttons = () => {
             </div>
             <div className=" px-6 py-3 rounded-md">
                 <HoverEffect></HoverEffect>
+                <HoverEffect></HoverEffect>
             </div>
             <div className="bg-black px-6 py-3 rounded-md">
                 <SkillBtn></SkillBtn>
-                <SkillBtn></SkillBtn>
-                <SkillBtn></SkillBtn>
+               
             </div>
         </div>
     );
