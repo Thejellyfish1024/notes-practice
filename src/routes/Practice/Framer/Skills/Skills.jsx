@@ -16,8 +16,8 @@ const Skills = () => {
   return (
     <div className="w-screen h-[80vh] bg-black flex justify-center items-center">
       <section className="max-w-7xl md:mx-auto mx-3">
-        <div data-aos="fade-down"
-          data-aos-duration="1000" className="mt-10">
+        <div className="mt-10">
+          <SkillsTabs />
           <SkillsTabs />
         </div>
       </section>
